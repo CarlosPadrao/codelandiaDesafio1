@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lexend Deca',sans-serif;
+}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+    
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+body {
+    background-color: #f3f5f7;
+}
+.flex {
+    display: flex;
+} 
+.row {
+    flex-direction: row;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+header {
+    background: var(--linear);
+    height: 250px;
+    padding: 32px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 8%;
+    margin-top: 0px;
+}
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+#busca {
+    background: hsla(0,0%,100%,.2);
+    border-radius: 5px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+header input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding-left: 13px;
+}
+header input::placeholder {
+    color:#ffffff;
+}
+
+.posts {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #13131F0D;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding: 25px 25px;
+}
+.posts h3 {
+    color: #B6B6B6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* letter-spacing: 0em; */
+    text-align: left;
+    
+}
+.posts h2 {
+    color: #313131;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    /* letter-spacing: 0em; */
+    text-align: left;
+}
+.posts p {
+    color: #B6B6B6;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+    /* letter-spacing: 0em; */
+    text-align: left;
+    vertical-align: top;
+}
+.data {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.data span {
+    width: 24px;
+    height: 24px;
+}
+.data span img {
+    cursor: pointer;
+}
+.data span img:hover {
+    transform: scale(1.15);
+}
+.titulo {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.conteudo {
+
+}
+
